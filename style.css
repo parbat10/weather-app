@@ -1,0 +1,100 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body Styling */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+}
+
+/* Main Container */
+.main-div {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: none;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #4e73df;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #f8f9fc;
+  transform: scale(1.05);
+}
+
+/* Weather Display Container */
+body > div:last-child {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  backdrop-filter: blur(10px);
+}
+
+/* Temperature */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Weather Image */
+img {
+  width: 80px;
+  margin: 10px 0;
+}
+
+/* Hourly Forecast */
+p:nth-last-child(-n+5) {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px;
+  border-radius: 8px;
+}
